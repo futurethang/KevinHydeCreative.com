@@ -13,17 +13,29 @@
     <!-- <link rel="stylesheet" href="styles/debug.css"> -->
     <style>
       body {
-        background-color: rgb(223, 223, 223);
+        /* background-color: rgb(223, 223, 223); */
       }
       .center {
         display: flex;
         justify-content: center;
         align-items: center;
       }
+      .portfolio-img-width-ref {
+        max-width: 256px; 
+        margin:1rem 0 0 0
+      }
        /* responsive */
       @media (max-width: 768px) {
         :root {
-          font-size: 90%;
+          font-size: 80%;
+        }
+        #intro {
+          text-align: center;
+          font-size: .75rem;
+        }
+        .portfolio-img-width-ref {
+          min-width: 75%;
+          margin: inherit;
         }
       }
 
@@ -49,49 +61,74 @@
     </header>
 
     <!-- .hero -->
-    <section class="hero">
+    <section class="hero" style="margin:0 0 4rem 0">
       <div class="hero-body">
         <div class="container">
-          <figure class="image center">
-            <img src="images/kph.jpg" style="max-width: 256px; border-radius: 50%; border: 2px solid #ccc; box-shadow: 0 2px 3px rgba(0,0,0, 0.1)" />
-          </figure>
+          <div class="columns">
+            <div class="column is-one-third">
+                <figure class="image center">
+                    <img src="images/kph.jpg" style="max-width: 256px; border-radius: 50%; border: 2px solid #ccc; box-shadow: 0 2px 3px rgba(0,0,0, 0.1)" />
+                  </figure>
+            </div>
+            <div class="column is-two-thirds center" id="intro">
+                <article class="notification has-background-white">
+                    <div class="">
+                      <div class="content">
+                        <h1 class="title is-size-2">Hi, I’m Kevin.</h1>
+                        <h2 class="is-size-4">I’m a full-stack developer & graphic designer</h2>
+                        <p class="is-size-5">
+                          Bulma is a modern CSS framework from @jgthms, based on
+                          Flexbox. Using Bulma, we can describe our website's design
+                          using just classes. <span class="emoticon">ᕕ( ᐛ )ᕗ</span>
+                        </p>
+                      </div>
+                    </div>
+                  </article> 
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>
     <!-- /.hero -->
-
+    <section class="has-background-light" style="padding: 4rem 0 1rem 0">
+      <div class="container center">
+          <h2 CLASS="title is-size-1">WEB DEVELOPMENT</h2>
+      </div>
+      </section>
     <!-- .section -->
-    <section class="section has-background-light">
+    <section class="section has-background-light  ">
       <div class="container">
         <div class="columns">
-          <div class="column">
-            <article class="media notification is-info">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fab fa-2x fa-css3-alt"></i>
-                </span>
+            <div class="column">
+                <article class="box has-background-white">
+                  <figure class="center">
+                    
+                      <img src="https://bulma.io/images/placeholders/256x256.png" alt="" class="image img-is-square" />
+                    
+                  </figure>
+                  <div class="media-content center">
+                    <div class="content portfolio-img-width-ref" style="max-width: 256px; margin:1rem 0 0 0">
+                      <h1 class="title is-size-4">…Flexbox?</h1>
+                      <p class="is-size-5">
+                        Flexbox is a CSS spec that makes sectioning and aligning
+                        more natural. We don't need to know Flexbox but it's how
+                        Bulma works behind-the-scenes.
+                        <span class="emoticon">⦤(^ー^)⦥</span>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div> 
+                       <div class="column">
+            <article class="box has-background-white">
+              <figure class="center">
+                
+                  <img src="https://bulma.io/images/placeholders/256x256.png" alt="" class="image img-is-square" />
+                
               </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Bulma?</h1>
-                  <p class="is-size-5">
-                    Bulma is a modern CSS framework from @jgthms, based on
-                    Flexbox. Using Bulma, we can describe our website's design
-                    using just classes. <span class="emoticon">ᕕ( ᐛ )ᕗ</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="column">
-            <article class="media notification is-primary">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fas fa-2x fa-align-justify"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
+              <div class="media-content center">
+                <div class="content portfolio-img-width-ref" style="max-width: 256px; margin:1rem 0 0 0">
                   <h1 class="title is-size-4">…Flexbox?</h1>
                   <p class="is-size-5">
                     Flexbox is a CSS spec that makes sectioning and aligning
@@ -104,32 +141,31 @@
             </article>
           </div>
           <div class="column">
-            <article class="media notification is-warning">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fas fa-2x fa-shield-alt"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">…Classes?</h1>
-                  <p class="is-size-5">
-                    Instead of writing our CSS per-element, we can use
-                    predefined classes. With enough classes, we can describe our
-                    website design using semantics.
-                    <span class="emoticon">٩(^ᴗ^)۶</span>
-                  </p>
+              <article class="box has-background-white">
+                <figure class="center">
+                  
+                    <img src="https://bulma.io/images/placeholders/256x256.png" alt="" class="image img-is-square" />
+                  
+                </figure>
+                <div class="media-content center">
+                  <div class="content portfolio-img-width-ref" style="max-width: 256px; margin:1rem 0 0 0">
+                    <h1 class="title is-size-4">…Flexbox?</h1>
+                    <p class="is-size-5">
+                      Flexbox is a CSS spec that makes sectioning and aligning
+                      more natural. We don't need to know Flexbox but it's how
+                      Bulma works behind-the-scenes.
+                      <span class="emoticon">⦤(^ー^)⦥</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-          </div>
-        </div>
+              </article>
+            </div>        </div>
       </div>
     </section>
     <!-- /.section -->
 
     <!-- .section -->
-    <section class="section">
+    <section class="section has-background-white">
       <div class="container">
         <div class="columns is-multiline">
             <div class="column is-one-third">
