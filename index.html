@@ -25,7 +25,7 @@
         margin: 1rem 0 0 0;
       }
       .custom-link {
-        color: #7397C7;
+        color: #7397c7;
         text-decoration: none;
       }
       /* responsive */
@@ -45,6 +45,7 @@
     </style>
   </head>
   <body>
+    <!-- <div class="container"> -->
     <header class="section is-paddingless">
       <nav class="hero-head">
         <div
@@ -54,7 +55,7 @@
             <figure class="navbar-item image">
               <img
                 src="images/kph-logo.svg"
-                style="width: 100%; height: 2.5rem;"
+                style="width: 100%; height: 2.5rem; opacity: 0.95;"
               />
             </figure>
           </div>
@@ -62,10 +63,10 @@
             <div class="navbar-end">
               <ul class="level">
                 <li class="navbar-item">
-                  <a>Web Development</a>
+                  <a href="#WEB-DEVELOPMENT">Web Development</a>
                 </li>
                 <li class="navbar-item">
-                  <a>Graphic Design</a>
+                  <a href="#GRAPHIC-DESIGN">Graphic Design</a>
                 </li>
                 <li class="navbar-item">
                   <a>Blog</a>
@@ -86,7 +87,7 @@
     <section class="hero" id="INTRO" style="margin:0 0 4rem 0">
       <div
         class="hero-body"
-        style="background: black url(images/banner.jpg) center / cover"
+        style="background: black url(images/banner-invert.jpg) center / contain;"
       >
         <div class="container">
           <div class="columns">
@@ -99,7 +100,7 @@
               </figure>
             </div>
             <div class="column is-two-thirds center" id="intro">
-              <article class="notification has-background-black">
+              <article class="notification" style="background-color: rgba(0,0,0, 0.95)">
                 <div class="">
                   <div class="content">
                     <h1 class="title is-size-2 has-text-white">
@@ -109,14 +110,18 @@
                       I’m a full-stack developer & graphic designer
                     </h2>
                     <p class="is-size-6 has-text-white">
-                      Hello! I’m Kevin, a Full Stack Developer and
-                      experienced professional with a background in creative
-                      services and small business. I’m passionate about problem
-                      solving and crafting delightful user experiences. 
-                      <p class="is-size-6 has-text-white">
-                      Are you hiring a developer, or seeking graphic
-                      design services? &nbsp;<a href="#" style="color: rgb(88, 160, 255); font-weight:700; text-decoration: none;">Let’s get in touch!</a>
-                      </p>
+                      Hello! I’m Kevin, a Full Stack Developer and experienced
+                      professional with a background in creative services and
+                      small business. I’m passionate about problem solving and
+                      crafting delightful user experiences.
+                    </p>
+                    <p class="is-size-6 has-text-white">
+                      Are you hiring a developer, or seeking graphic design
+                      services? &nbsp;<a
+                        href="#"
+                        style="color: rgb(88, 160, 255); font-weight:700; text-decoration: none;"
+                        >Let’s get in touch!</a
+                      >
                     </p>
                   </div>
                 </div>
@@ -150,11 +155,12 @@
           <div class="column">
             <article class="box has-background-white">
               <figure class="center">
-                <img
-                  src="images/NeighborCorps2.png"
-                  alt=""
-                  class="image img-is-square"
-                />
+                <a href="https://github.com/UWBC-Final-Project" target="blank"
+                  ><img
+                    src="images/NeighborCorps2.png"
+                    alt=""
+                    class="image img-is-square"
+                /></a>
               </figure>
               <div class="media-content center">
                 <div
@@ -163,9 +169,22 @@
                 >
                   <h1 class="title is-size-4">Neighbor Corps</h1>
                   <p class="is-size-5">
-                    Community task-sharing platform, enabling neighbors to be better stewards by flagging and responding to opportunities for improvement.</p>
-                    <p class="is-size-5">Uses a device’s GPS and Camera to post issues, built with React Native, NodeJS, running on an Express & Mongo API.</p> 
+                    Community task-sharing platform, enabling neighbors to be
+                    better stewards by flagging and responding to opportunities
+                    for improvement.
                   </p>
+                  <p class="is-size-5">
+                    Uses a device’s GPS and Camera to post issues, built with
+                    React Native, NodeJS, running on an Express & Mongo API.
+                  </p>
+                  <a
+                    href="https://github.com/UWBC-Final-Project"
+                    target="blank"
+                  >
+                    <figcaption class="custom-link" style="text-align: right;">
+                      View on Github
+                    </figcaption>
+                  </a>
                 </div>
               </div>
             </article>
@@ -186,8 +205,19 @@
                 >
                   <h1 class="title is-size-4">Node Shopping Cart</h1>
                   <p class="is-size-5">
-                    Using terminal commands, user can interact with the program to view products and place purchases. Under manager and supervisor privileges users can also update inventory numbers and view cost and profit margins. View on GitHub
+                    Using terminal commands, user can interact with the program
+                    to view products and place purchases. Under manager and
+                    supervisor privileges users can also update inventory
+                    numbers and view cost and profit margins. View on GitHub
                   </p>
+                  <a
+                    href="https://github.com/futurethang/Node_Shopping_Cart"
+                    target="blank"
+                  >
+                    <figcaption class="custom-link" style="text-align: right;">
+                      View on Github
+                    </figcaption>
+                  </a>
                 </div>
               </div>
             </article>
@@ -208,8 +238,17 @@
                 >
                   <h1 class="title is-size-4">Jewels Game</h1>
                   <p class="is-size-5">
-                    A sweet little front-end project with fun user interaction to guess hidden numbers. Play it here!
+                    A sweet little front-end project with fun user interaction
+                    to guess hidden numbers. Play it here!
                   </p>
+                  <a
+                    href="https://github.com/futurethang/Jewel_Game"
+                    target="blank"
+                  >
+                    <figcaption class="custom-link" style="text-align: right;">
+                      View on Github
+                    </figcaption>
+                  </a>
                 </div>
               </div>
             </article>
@@ -218,7 +257,11 @@
       </div>
       <section class="has-background-light" style="padding: 1rem 0 1rem 0">
         <div class="container right" style="align-items: center">
-          <a href="" class="is-size-5 columns">
+          <a
+            href="https://github.com/futurethang"
+            target="blank"
+            class="is-size-5 columns"
+          >
             <span class="center">See more . . .</span>
           </a>
         </div>
@@ -242,7 +285,7 @@
             <article class="media notification has-background-white">
               <figure class="media-left">
                 <span class="icon is-large">
-                  <i class="fab fa-3x fa-react has-text-warning"></i>
+                  <i class="fab fa-3x fa-react" style="color: #00d8ff"></i>
                 </span>
               </figure>
               <div class="media-content">
@@ -258,7 +301,7 @@
           <div class="column is-one-third">
             <article class="media notification has-background-white">
               <figure class="media-left">
-                <span class="icon is-large has-text-primary">
+                <span class="icon is-large" style="color: #e34f26">
                   <i class="fab fa-3x fa-html5"></i>
                 </span>
               </figure>
@@ -266,7 +309,8 @@
                 <div class="content">
                   <h1 class="title is-size-4">HTML</h1>
                   <p class="subtitle is-size-5">
-                    Standard markup language for creating web pages and web applications
+                    Standard markup language for creating web pages and web
+                    applications
                   </p>
                 </div>
               </div>
@@ -275,7 +319,7 @@
           <div class="column is-one-third">
             <article class="media notification has-background-white">
               <figure class="media-left">
-                <span class="icon is-large has-text-danger">
+                <span class="icon is-large" style="color: #4069A4">
                   <i class="fab fa-3x fa-css3-alt"></i>
                 </span>
               </figure>
@@ -283,7 +327,8 @@
                 <div class="content">
                   <h1 class="title is-size-4">CSS</h1>
                   <p class="subtitle is-size-5">
-                    Style sheet language used for describing the presentation of a web document
+                    Style sheet language used for describing the presentation of
+                    a web document
                   </p>
                 </div>
               </div>
@@ -292,7 +337,7 @@
           <div class="column is-one-third">
             <article class="media notification has-background-white">
               <figure class="media-left">
-                <span class="icon is-large has-text-info">
+                <span class="icon is-large" style="color: #6B994E">
                   <i class="fab fa-3x fa-node-js"></i>
                 </span>
               </figure>
@@ -300,7 +345,8 @@
                 <div class="content">
                   <h1 class="title is-size-4">Node.js</h1>
                   <p class="subtitle is-size-5">
-                    Open-source, cross-platform JavaScript run-time environment for back-end development.
+                    Open-source, cross-platform JavaScript run-time environment
+                    for back-end development.
                   </p>
                 </div>
               </div>
@@ -318,7 +364,8 @@
                 <div class="content">
                   <h1 class="title is-size-4">Express.js</h1>
                   <p class="subtitle is-size-5">
-                    A minimal and flexible Node.js web application framework for web and mobile applications.
+                    A minimal and flexible Node.js web application framework for
+                    web and mobile applications.
                   </p>
                 </div>
               </div>
@@ -327,7 +374,7 @@
           <div class="column is-one-third">
             <article class="media notification has-background-white">
               <figure class="media-left">
-                <span class="icon is-large has-text-danger">
+                <span class="icon is-large" style="color:#4E3C2B">
                   <i class="fas fa-3x fa-database"></i>
                 </span>
               </figure>
@@ -342,14 +389,30 @@
             </article>
           </div>
         </div>
-        <div class="section">
-          <div class="container center">
-            <a
-              class="button center is-large is-primary is-outlined"
-              style="min-width:20rem"
-            >
-              Contact Me
-            </a>
+        <div class="section contact-cta">
+          <div class="columns">
+            <div class="column">
+              <div class="center">
+                <a
+                  class="button center is-large is-primary is-outlined"
+                  style="min-width:20rem"
+                >
+                  Contact Me
+                </a>
+              </div>
+            </div>
+            <div class="column">
+              <div class="center">
+                <a
+                  href="https://github.com/futurethang/Kevin_Hydes_Resume"
+                  target="blank"
+                  class="button center is-large is-primary is-outlined"
+                  style="min-width:20rem"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -379,7 +442,7 @@
             <article class="box has-background-white">
               <figure class="center">
                 <img
-                  src="https://bulma.io/images/placeholders/256x256.png"
+                  src="images/poster.png"
                   alt=""
                   class="image img-is-square"
                 />
@@ -389,13 +452,20 @@
                   class="content portfolio-img-width-ref"
                   style="max-width: 256px; margin:1rem 0 0 0"
                 >
-                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <h1 class="title is-size-4">Posters</h1>
                   <p class="is-size-5">
-                    Flexbox is a CSS spec that makes sectioning and aligning
-                    more natural. We don't need to know Flexbox but it's how
-                    Bulma works behind-the-scenes.
-                    <span class="emoticon">⦤(^ー^)⦥</span>
+                    Attention grabbing, unique poster designs for bands and
+                    events. Use of color and imagery to stand out in crowded
+                    visual spaces.
                   </p>
+                  <a
+                    href="https://github.com/UWBC-Final-Project"
+                    target="blank"
+                  >
+                    <figcaption class="custom-link" style="text-align: right;">
+                      View on Behance
+                    </figcaption>
+                  </a>
                 </div>
               </div>
             </article>
@@ -404,7 +474,7 @@
             <article class="box has-background-white">
               <figure class="center">
                 <img
-                  src="https://bulma.io/images/placeholders/256x256.png"
+                  src="images/invitation.png"
                   alt=""
                   class="image img-is-square"
                 />
@@ -414,13 +484,20 @@
                   class="content portfolio-img-width-ref"
                   style="max-width: 256px; margin:1rem 0 0 0"
                 >
-                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <h1 class="title is-size-4">Event Invitation</h1>
                   <p class="is-size-5">
-                    Flexbox is a CSS spec that makes sectioning and aligning
-                    more natural. We don't need to know Flexbox but it's how
-                    Bulma works behind-the-scenes.
-                    <span class="emoticon">⦤(^ー^)⦥</span>
+                    Invitation for community and alumni to attend annual school
+                    fundraiser and celebration. Designed a fresh look to get
+                    attendees excited for the event.
                   </p>
+                  <a
+                    href="https://github.com/UWBC-Final-Project"
+                    target="blank"
+                  >
+                    <figcaption class="custom-link" style="text-align: right;">
+                      View on Behance
+                    </figcaption>
+                  </a>
                 </div>
               </div>
             </article>
@@ -429,7 +506,7 @@
             <article class="box has-background-white">
               <figure class="center">
                 <img
-                  src="https://bulma.io/images/placeholders/256x256.png"
+                  src="images/annual-report.png"
                   alt=""
                   class="image img-is-square"
                 />
@@ -439,13 +516,21 @@
                   class="content portfolio-img-width-ref"
                   style="max-width: 256px; margin:1rem 0 0 0"
                 >
-                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <h1 class="title is-size-4">Annual Report</h1>
                   <p class="is-size-5">
-                    Flexbox is a CSS spec that makes sectioning and aligning
-                    more natural. We don't need to know Flexbox but it's how
-                    Bulma works behind-the-scenes.
-                    <span class="emoticon">⦤(^ー^)⦥</span>
+                    Annual financial statement for local non-profit. Set the
+                    tone for the organization's growth and display
+                    accomplishements to entice current and potential sponsors to
+                    join future programming.
                   </p>
+                  <a
+                    href="https://github.com/UWBC-Final-Project"
+                    target="blank"
+                  >
+                    <figcaption class="custom-link" style="text-align: right;">
+                      View on Behance
+                    </figcaption>
+                  </a>
                 </div>
               </div>
             </article>
@@ -454,7 +539,11 @@
       </div>
       <section class="has-background-light" style="padding: 1rem 0 1rem 0">
         <div class="container right" style="align-items: center">
-          <a href="" class="is-size-5 columns">
+          <a
+            href="https://www.behance.net/kphyde7c6d/"
+            target="blank"
+            class="is-size-5 columns"
+          >
             <span class="center">See more . . .</span>
           </a>
         </div>
@@ -477,15 +566,13 @@
           <div class="column is-one-third">
             <article class="media notification has-background-white">
               <figure class="media-left">
-                <span class="icon is-large">
-                  <i class="fab fa-3x fa-react has-text-warning"></i>
-                </span>
+                <img src="images/ai.png" />
               </figure>
               <div class="media-content">
                 <div class="content">
-                  <h1 class="title is-size-4">Illustrator</h1>
+                  <h1 class="title is-size-4">Adobe Illustrator</h1>
                   <p class="subtitle is-size-5">
-                    The power of <strong>Flexbox</strong> in a simple interface
+                    Industry leading vector illustration software.
                   </p>
                 </div>
               </div>
@@ -494,16 +581,13 @@
           <div class="column is-one-third">
             <article class="media notification has-background-white">
               <figure class="media-left">
-                <span class="icon is-large has-text-primary">
-                  <i class="fab fa-3x fa-html5"></i>
-                </span>
+                <img src="images/id.png" />
               </figure>
               <div class="media-content">
                 <div class="content">
-                  <h1 class="title is-size-4">InDesign</h1>
+                  <h1 class="title is-size-4">Adobe InDesign</h1>
                   <p class="subtitle is-size-5">
-                    Design the <strong>structure</strong> of your webpage with
-                    these CSS classes
+                    Powerful document creation app from the Adobe Creative Suite.
                   </p>
                 </div>
               </div>
@@ -512,30 +596,43 @@
           <div class="column is-one-third">
             <article class="media notification has-background-white">
               <figure class="media-left">
-                <span class="icon is-large has-text-danger">
-                  <i class="fab fa-3x fa-css3-alt"></i>
-                </span>
+                <img src="images/ps.png" />
               </figure>
               <div class="media-content">
                 <div class="content">
-                  <h1 class="title is-size-4">Photoshop</h1>
+                  <h1 class="title is-size-4">Adobe Photoshop</h1>
                   <p class="subtitle is-size-5">
-                    Essential interface elements that only require a
-                    <strong>single CSS class</strong>
+                    Image editing, photo retouching, graphics effects, black magic.
                   </p>
                 </div>
               </div>
             </article>
           </div>
         </div>
-        <div class="section">
-          <div class="container center">
-            <a
-              class="button center is-large is-primary is-outlined"
-              style="min-width:20rem"
-            >
-              Contact Me
-            </a>
+        <div class="section contact-cta">
+          <div class="columns">
+            <div class="column">
+              <div class="center">
+                <a
+                  class="button center is-large is-primary is-outlined"
+                  style="min-width:20rem"
+                >
+                  Contact Me
+                </a>
+              </div>
+            </div>
+            <div class="column">
+              <div class="center">
+                <a
+                  href="https://github.com/futurethang/Kevin_Hydes_Resume"
+                  target="blank"
+                  class="button center is-large is-primary is-outlined"
+                  style="min-width:20rem"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -543,5 +640,41 @@
     <!-- /.section -->
 
     <!-- /GRAPHIC DESIGN SECTION -->
+
+    <footer class="section has-background-light">
+      <nav class="hero-head">
+        <div
+          class="columns is-mobile is-marginless heading has-text-weight-bold"
+        >
+          <div class="column is-one-quarter left">
+            <figure class="navbar-item image" style="flex-shrink: 1">
+              <img
+                src="images/kph-logo.svg"
+                style="width: 100%; height: 2.5rem;"
+              />
+            </figure>
+          </div>
+          <div class="column is-three-quarters right">
+            <div class="navbar-end">
+              <ul class="level">
+                <li class="navbar-item">
+                  <a href="#WEB-DEVELOPMENT">Web Development</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#GRAPHIC-DESIGN">Graphic Design</a>
+                </li>
+                <li class="navbar-item">
+                  <a>Blog</a>
+                </li>
+                <li class="navbar-item">
+                  <a>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <!-- </div> -->
   </body>
 </html>

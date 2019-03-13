@@ -21,6 +21,9 @@
 	.desktop {
 		display: none;
 	}
+	.navbar-item .image {
+		flex-shrink: 1;
+	}
 }
 
 @media (max-width: 850px) {
@@ -34,6 +37,9 @@
 	.right {
 		justify-content: flex-start;
 		padding-top: 0;
+	}
+	.navbar-item .image {
+		flex-shrink: 0;
 	}
 }
 
