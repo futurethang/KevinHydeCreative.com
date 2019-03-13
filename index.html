@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="./styles/helpers.css" />
     <!-- <link rel="stylesheet" href="styles/debug.css"> -->
     <style>
-      body {
-        /* background-color: rgb(223, 223, 223); */
-      }
+      /* body {
+        background-color: rgb(223, 223, 223);
+      } */
       .center {
         display: flex;
         justify-content: center;
@@ -50,7 +50,7 @@
         <div
           class="columns is-mobile is-marginless heading has-text-weight-bold"
         >
-          <div class="column left">
+          <div class="column is-one-quarter left">
             <figure class="navbar-item image">
               <img
                 src="images/kph-logo.svg"
@@ -58,13 +58,23 @@
               />
             </figure>
           </div>
-          <div class="column right">
-            <figure class="navbar-item image">
-              <i
-                class="fas fa-3x fa-bars has-text-black"
-                style="width: 2rem; height: 2rem;"
-              ></i>
-            </figure>
+          <div class="column is-three-quarters right">
+            <div class="navbar-end">
+              <ul class="level">
+                <li class="navbar-item">
+                  <a>Web Development</a>
+                </li>
+                <li class="navbar-item">
+                  <a>Graphic Design</a>
+                </li>
+                <li class="navbar-item">
+                  <a>Blog</a>
+                </li>
+                <li class="navbar-item">
+                  <a>Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

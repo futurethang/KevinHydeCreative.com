@@ -22,3 +22,23 @@
 		display: none;
 	}
 }
+
+@media (max-width: 850px) {
+	.level { display:flex}
+}
+
+@media (max-width: 605px) {
+	.hero-head > .columns {
+		flex-direction: column;
+	}
+	.right {
+		justify-content: flex-start;
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 425px) {
+	.right {
+		font-size: 80%;
+	}
+}
