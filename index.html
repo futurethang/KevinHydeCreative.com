@@ -24,6 +24,10 @@
         max-width: 256px;
         margin: 1rem 0 0 0;
       }
+      .custom-link {
+        color: #7397C7;
+        text-decoration: none;
+      }
       /* responsive */
       @media (max-width: 768px) {
         :root {
@@ -66,8 +70,10 @@
       </nav>
     </header>
 
+    <!-- INTRO SECTION -->
+
     <!-- .hero -->
-    <section class="hero" style="margin:0 0 4rem 0">
+    <section class="hero" id="INTRO" style="margin:0 0 4rem 0">
       <div
         class="hero-body"
         style="background: black url(images/banner.jpg) center / cover"
@@ -92,10 +98,15 @@
                     <h2 class="is-size-4 has-text-white">
                       I’m a full-stack developer & graphic designer
                     </h2>
-                    <p class="is-size-5 has-text-white">
-                      Bulma is a modern CSS framework from @jgthms, based on
-                      Flexbox. Using Bulma, we can describe our website's design
-                      using just classes. <span class="emoticon">ᕕ( ᐛ )ᕗ</span>
+                    <p class="is-size-6 has-text-white">
+                      Hello! I’m Kevin, a Full Stack Developer and
+                      experienced professional with a background in creative
+                      services and small business. I’m passionate about problem
+                      solving and crafting delightful user experiences. 
+                      <p class="is-size-6 has-text-white">
+                      Are you hiring a developer, or seeking graphic
+                      design services? &nbsp;<a href="#" style="color: rgb(88, 160, 255); font-weight:700; text-decoration: none;">Let’s get in touch!</a>
+                      </p>
                     </p>
                   </div>
                 </div>
@@ -106,7 +117,16 @@
       </div>
     </section>
     <!-- /.hero -->
-    <section class="has-background-light" style="padding: 4rem 0 1rem 0">
+
+    <!-- /INTRO SECTION -->
+
+    <!-- WEB DEVELOPMENT SECTION -->
+
+    <section
+      class="has-background-light"
+      id="WEB-DEVELOPMENT"
+      style="padding: 4rem 0 1rem 0"
+    >
       <div class="container center">
         <h2 class="title is-size-1" style="text-align: center">
           WEB DEVELOPMENT
@@ -121,7 +141,7 @@
             <article class="box has-background-white">
               <figure class="center">
                 <img
-                  src="https://bulma.io/images/placeholders/256x256.png"
+                  src="images/NeighborCorps2.png"
                   alt=""
                   class="image img-is-square"
                 />
@@ -131,12 +151,10 @@
                   class="content portfolio-img-width-ref"
                   style="max-width: 256px; margin:1rem 0 0 0"
                 >
-                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <h1 class="title is-size-4">Neighbor Corps</h1>
                   <p class="is-size-5">
-                    Flexbox is a CSS spec that makes sectioning and aligning
-                    more natural. We don't need to know Flexbox but it's how
-                    Bulma works behind-the-scenes.
-                    <span class="emoticon">⦤(^ー^)⦥</span>
+                    Community task-sharing platform, enabling neighbors to be better stewards by flagging and responding to opportunities for improvement.</p>
+                    <p class="is-size-5">Uses a device’s GPS and Camera to post issues, built with React Native, NodeJS, running on an Express & Mongo API.</p> 
                   </p>
                 </div>
               </div>
@@ -146,7 +164,7 @@
             <article class="box has-background-white">
               <figure class="center">
                 <img
-                  src="https://bulma.io/images/placeholders/256x256.png"
+                  src="images/shoppingCart.gif"
                   alt=""
                   class="image img-is-square"
                 />
@@ -156,12 +174,9 @@
                   class="content portfolio-img-width-ref"
                   style="max-width: 256px; margin:1rem 0 0 0"
                 >
-                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <h1 class="title is-size-4">Node Shopping Cart</h1>
                   <p class="is-size-5">
-                    Flexbox is a CSS spec that makes sectioning and aligning
-                    more natural. We don't need to know Flexbox but it's how
-                    Bulma works behind-the-scenes.
-                    <span class="emoticon">⦤(^ー^)⦥</span>
+                    Using terminal commands, user can interact with the program to view products and place purchases. Under manager and supervisor privileges users can also update inventory numbers and view cost and profit margins. View on GitHub
                   </p>
                 </div>
               </div>
@@ -171,7 +186,7 @@
             <article class="box has-background-white">
               <figure class="center">
                 <img
-                  src="https://bulma.io/images/placeholders/256x256.png"
+                  src="images/jewels.png"
                   alt=""
                   class="image img-is-square"
                 />
@@ -181,12 +196,9 @@
                   class="content portfolio-img-width-ref"
                   style="max-width: 256px; margin:1rem 0 0 0"
                 >
-                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <h1 class="title is-size-4">Jewels Game</h1>
                   <p class="is-size-5">
-                    Flexbox is a CSS spec that makes sectioning and aligning
-                    more natural. We don't need to know Flexbox but it's how
-                    Bulma works behind-the-scenes.
-                    <span class="emoticon">⦤(^ー^)⦥</span>
+                    A sweet little front-end project with fun user interaction to guess hidden numbers. Play it here!
                   </p>
                 </div>
               </div>
@@ -194,6 +206,13 @@
           </div>
         </div>
       </div>
+      <section class="has-background-light" style="padding: 1rem 0 1rem 0">
+        <div class="container right" style="align-items: center">
+          <a href="" class="is-size-5 columns">
+            <span class="center">See more . . .</span>
+          </a>
+        </div>
+      </section>
     </section>
     <!-- /.section -->
     <section class="has-background-white" style="padding: 4rem 0 1rem 0">
@@ -203,6 +222,7 @@
         </h2>
       </div>
     </section>
+    <!-- /Web Development tools of the trade -->
 
     <!-- .section -->
     <section class="section has-background-white">
@@ -316,8 +336,206 @@
             </article>
           </div>
         </div>
+        <div class="section">
+          <div class="container center">
+            <a
+              class="button center is-large is-primary is-outlined"
+              style="min-width:20rem"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <!-- /.section -->
+
+    <!-- /WEB DEVELOPMENT SECTION -->
+
+    <!-- GRAPHIC DESIGN SECTION -->
+
+    <section
+      class="has-background-light"
+      id="GRAPHIC-DESIGN"
+      style="padding: 4rem 0 1rem 0"
+    >
+      <div class="container center">
+        <h2 class="title is-size-1" style="text-align: center">
+          GRAPHIC DESIGN
+        </h2>
+      </div>
+    </section>
+    <!-- .section -->
+    <section class="section has-background-light  ">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <article class="box has-background-white">
+              <figure class="center">
+                <img
+                  src="https://bulma.io/images/placeholders/256x256.png"
+                  alt=""
+                  class="image img-is-square"
+                />
+              </figure>
+              <div class="media-content center">
+                <div
+                  class="content portfolio-img-width-ref"
+                  style="max-width: 256px; margin:1rem 0 0 0"
+                >
+                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <p class="is-size-5">
+                    Flexbox is a CSS spec that makes sectioning and aligning
+                    more natural. We don't need to know Flexbox but it's how
+                    Bulma works behind-the-scenes.
+                    <span class="emoticon">⦤(^ー^)⦥</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column">
+            <article class="box has-background-white">
+              <figure class="center">
+                <img
+                  src="https://bulma.io/images/placeholders/256x256.png"
+                  alt=""
+                  class="image img-is-square"
+                />
+              </figure>
+              <div class="media-content center">
+                <div
+                  class="content portfolio-img-width-ref"
+                  style="max-width: 256px; margin:1rem 0 0 0"
+                >
+                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <p class="is-size-5">
+                    Flexbox is a CSS spec that makes sectioning and aligning
+                    more natural. We don't need to know Flexbox but it's how
+                    Bulma works behind-the-scenes.
+                    <span class="emoticon">⦤(^ー^)⦥</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column">
+            <article class="box has-background-white">
+              <figure class="center">
+                <img
+                  src="https://bulma.io/images/placeholders/256x256.png"
+                  alt=""
+                  class="image img-is-square"
+                />
+              </figure>
+              <div class="media-content center">
+                <div
+                  class="content portfolio-img-width-ref"
+                  style="max-width: 256px; margin:1rem 0 0 0"
+                >
+                  <h1 class="title is-size-4">…Flexbox?</h1>
+                  <p class="is-size-5">
+                    Flexbox is a CSS spec that makes sectioning and aligning
+                    more natural. We don't need to know Flexbox but it's how
+                    Bulma works behind-the-scenes.
+                    <span class="emoticon">⦤(^ー^)⦥</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <section class="has-background-light" style="padding: 1rem 0 1rem 0">
+        <div class="container right" style="align-items: center">
+          <a href="" class="is-size-5 columns">
+            <span class="center">See more . . .</span>
+          </a>
+        </div>
+      </section>
+    </section>
+    <!-- /.section -->
+    <section class="has-background-white" style="padding: 4rem 0 1rem 0">
+      <div class="container center">
+        <h2 class="title is-size-3" style="text-align: center">
+          Tools of the trade.
+        </h2>
+      </div>
+    </section>
+    <!-- /Web Development tools of the trade -->
+
+    <!-- .section -->
+    <section class="section has-background-white">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <article class="media notification has-background-white">
+              <figure class="media-left">
+                <span class="icon is-large">
+                  <i class="fab fa-3x fa-react has-text-warning"></i>
+                </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">Illustrator</h1>
+                  <p class="subtitle is-size-5">
+                    The power of <strong>Flexbox</strong> in a simple interface
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="media notification has-background-white">
+              <figure class="media-left">
+                <span class="icon is-large has-text-primary">
+                  <i class="fab fa-3x fa-html5"></i>
+                </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">InDesign</h1>
+                  <p class="subtitle is-size-5">
+                    Design the <strong>structure</strong> of your webpage with
+                    these CSS classes
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="media notification has-background-white">
+              <figure class="media-left">
+                <span class="icon is-large has-text-danger">
+                  <i class="fab fa-3x fa-css3-alt"></i>
+                </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">Photoshop</h1>
+                  <p class="subtitle is-size-5">
+                    Essential interface elements that only require a
+                    <strong>single CSS class</strong>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="section">
+          <div class="container center">
+            <a
+              class="button center is-large is-primary is-outlined"
+              style="min-width:20rem"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section -->
+
+    <!-- /GRAPHIC DESIGN SECTION -->
   </body>
 </html>
