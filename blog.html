@@ -1,130 +1,119 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hello Bulma!</title>
-		<link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
-		<style>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kevin Hyde - Developer / Designer</title>
+    <link rel="stylesheet" href="./styles/bulmaswatch.min.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="./styles/helpers.css" />
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+    <style>
+      /* body {
+        background-color: rgb(223, 223, 223);
+      } */
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .portfolio-img-width-ref {
+        max-width: 256px;
+        margin: 1rem 0 0 0;
+      }
+      .custom-link {
+        color: #7397c7;
+        text-decoration: none;
+      }
+      /* responsive */
+      @media (max-width: 768px) {
+        :root {
+          font-size: 80%;
+        }
+        #intro {
+          text-align: center;
+          font-size: 0.75rem;
+        }
+        .portfolio-img-width-ref {
+          min-width: 75%;
+          margin: inherit;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <header class="section is-paddingless">
+      <nav class="hero-head">
+        <div
+          class="columns is-mobile is-marginless heading has-text-weight-bold"
+        >
+          <div class="column is-one-quarter left">
+            <figure class="navbar-item image">
+              <a href="./index.html">
+                <img
+                  src="images/kph-logo.svg"
+                  style="width: 100%; height: 2.5rem; opacity: 0.95;"
+              /></a>
+            </figure>
+          </div>
+          <div class="column is-three-quarters right">
+            <div class="navbar-end">
+              <ul class="level">
+                <li class="navbar-item">
+                  <a href="./index.html#WEB-DEVELOPMENT">Web Development</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="./index.html#GRAPHIC-DESIGN">Graphic Design</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-.center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+    <!-- INTRO SECTION -->
 
-.is-paddingless-horizontal { padding-left: 0; padding-right: 0; }
-
-.grid {
-	display: grid;
-	grid-template-columns:
-		[xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
-}
-
-.grid *  { grid-column: md; }
-.grid-xl { grid-column: xl; }
-
-@media (max-width: 672px) {
-	:root {
-		font-size: 80%;
-	}
-}
-
-		</style>
-	</head>
-	<body>
-
-		<!-- .section -->
-		<section class="section is-paddingless-horizontal">
-			<div class="container grid">
-				<nav class="breadcrumb" aria-label="breadcrumbs">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li class="is-active"><a href="#" aria-current="page">How to build a beautiful blog</a></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
-		<!-- /.section -->
-		
-		<!-- .section -->
-		<section class="section is-paddingless-horizontal" style="padding-top: 0;">
-			<div class="container grid" style="max-width: 1024px;">
-
-				<!-- .media -->
-				<article class="media center">
-					<figure class="media-left">
-						<span class="image is-64x64">
-							<img src="images/me.jpg">
-						</span>
-					</figure>
-					<div class="media-content">
-						<div class="content">
-							<p>
-								<strong>Zaydek Michels-Gualtieri</strong> <a>@username_zaydek</a><br>
-								<span class="has-text-grey">Self-taught, inspired to learn<br>
-								<time datetime="2018-04-20">Apr 20</time> · 20 min read</span>
-							</p>
-						</div>
-					</div>
-				</article>
-				<!-- /.media -->
-
-				<!-- .section -->
-				<div class="section is-paddingless-horizontal">
-					<h1 class="title is-2">
-						How to build a beautiful blog
-					</h1>
-					<h2 class="subtitle is-3 has-text-grey-light">
-						Learn from first-principles
-					</h2>
-				</div>
-				<!-- /.section -->
-				
-				<!-- .columns -->
-				<figure class="columns is-mobile is-variable is-0 is-marginless grid-xl">
-					<div class="column">
-						<div class="image card">
-							<a><img src="images/blog-1.png"></a>
-						</div>
-					</div>
-					<div class="column">
-						<div class="image card">
-							<a><img src="images/blog-2.png"></a>
-						</div>
-					</div>
-					<div class="column">
-						<div class="image card">
-							<a><img src="images/blog-3.png"></a>
-						</div>
-					</div>
-				</figure>
-				<figcaption class="level">
-					<small class="level-item has-text-grey">
-						The blog we'll build. Click to continue on Scrimba
-					</small>
-				</figcaption>
-				<!-- /.columns -->
-
-				<div class="content is-medium">
-					<p>
-						If you’re like me, you’re interested in the web and its overwhelming reach, but you’re also inundated with the mess of information that is learning HTML and CSS.
-						The thing is, these languages are unlike other domains, like Word Processors and Programming Languages.
-						<strong>The web is another world</strong>, and it’s not the prettiest thing around.
-					</p>
-					<p>
-						Having learned me some web, I’m here to give a gentle push of encouragement, because, <strong>with a little guidance</strong>, these domains can be a lot easier than you imagine.
-						Continue reading, and we’ll build a beautiful blog from scratch.
-						We’ll also learn some CSS Grid, Flexbox, and Responsive Design.
-					</p>
-				</div>
-
-			</div>
-		</section>
-		<!-- /.section -->
-
-	</body>
+    <!-- .hero -->
+    <section class="hero" id="INTRO" style="margin:0 0 4rem 0">
+      <div
+        class="hero-body"
+        style="background: black url(images/banner-invert.jpg) center / contain;"
+      >
+        <div class="container center">
+          <div class="center" style="max-width: 500px">
+            <article
+              class="notification"
+              style="background-color: rgba(0,0,0, 0.95);"
+            >
+              <h1 class="is-size-3 has-text-white">Coming Soon!</h1><br />
+              <p class="has-text-white">
+                Hey hey! I'm not quite ready yet but if you check back soon I
+                should have some nice tasty articles for you to enjoy!
+              </p><br />
+              <p class="has-text-white">
+                I'll mainly be writing about web development and graphic design,
+                perhaps with some additional entries about other fun projects in
+                the kitchen, or with my music habits, or what have you's.
+              </p><br />
+              <p class="has-text-white">
+                Above all else I promise to keep it informative, positive, and
+                worth your precious time. I can't exactly say where it will go
+                at the moment, but as I grow as a developer, I'm excited to
+                share my thoughts, challenges, and successes. See ya soon!
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.hero -->
+  </body>
 </html>
