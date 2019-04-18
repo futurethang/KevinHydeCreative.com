@@ -1,0 +1,43 @@
+Arguments: 
+  /Users/kevinhyde/.nvm/versions/node/v11.10.0/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js
+
+PATH: 
+  /Users/kevinhyde/.rvm/gems/ruby-2.3.0/bin:/Users/kevinhyde/.rvm/gems/ruby-2.3.0@global/bin:/Users/kevinhyde/.rvm/rubies/ruby-2.3.0/bin:/Users/kevinhyde/.nvm/versions/node/v11.10.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kevinhyde/.rvm/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  11.10.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:58:26)
+
+npm manifest: 
+  {
+    "name": "bulma-portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+      "doc": "docs"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bulmaswatch": "^0.7.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
