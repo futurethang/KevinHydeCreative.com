@@ -46,33 +46,42 @@
   </head>
   <body>
     <!-- <div class="container"> -->
-    <header class="section is-paddingless">
-      <nav class="hero-head">
+    <header class="section is-paddingless" style="margin-bottom: 64px;">
+      <nav class="">
         <div
-          class="columns is-mobile is-marginless heading has-text-weight-bold"
+          class="columns is-mobile is-marginless heading has-text-weight-bold has-background-black navbar is-fixed-top"
         >
           <div class="column is-one-quarter left">
             <figure class="navbar-item image">
               <img
-                src="images/kph-logo.svg"
-                style="width: 100%; height: 2.5rem; opacity: 0.95;"
+                src="images/kph-logo-white.svg"
+                style="width: 100%; height: 2.5rem; opacity: 0.95; fill: white"
               />
             </figure>
           </div>
-          <div class="column is-three-quarters right">
+          <div class="column is-three-quarters right has-text-white">
             <div class="navbar-end">
               <ul class="level">
                 <li class="navbar-item">
-                  <a href="#WEB-DEVELOPMENT">Web Development</a>
+                  <a class="has-text-white" href="#WEB-DEVELOPMENT"
+                    >Web Development</a
+                  >
                 </li>
                 <li class="navbar-item">
-                  <a href="#GRAPHIC-DESIGN">Graphic Design</a>
+                  <a class="has-text-white" href="#GRAPHIC-DESIGN"
+                    >Graphic Design</a
+                  >
                 </li>
                 <li class="navbar-item">
-                  <a href="http://devkev.net" target="blank">Blog</a>
+                  <a
+                    class="has-text-white"
+                    href="http://devkev.net"
+                    target="blank"
+                    >Blog</a
+                  >
                 </li>
                 <li class="navbar-item">
-                  <a href="./contact.html">Contact</a>
+                  <a class="has-text-white" href="./contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -84,10 +93,10 @@
     <!-- INTRO SECTION -->
 
     <!-- .hero -->
-    <section class="hero" id="INTRO" style="margin:0 0 4rem 0">
+    <section class="hero" id="INTRO">
       <div
         class="hero-body"
-        style="background: black url(images/banner-invert.jpg) center / contain;"
+        style="background: black url(images/banner.jpg) center / contain;"
       >
         <div class="container">
           <div class="columns">
@@ -107,23 +116,22 @@
                 <div class="">
                   <div class="content">
                     <h1 class="title is-size-2 has-text-white">
-                      Hi, I’m Kevin.
+                      Hi, I’m Kevin Hyde.
                     </h1>
                     <h2 class="is-size-4 has-text-white">
-                      I’m a front end developer & graphic designer.
+                      I’m a frontend developer & graphic designer.
                     </h2>
                     <p class="is-size-6 has-text-white">
-                      I've got the right skills and experience to make an impact
-                      on your team. I've helped start ups, institutions and
-                      freelance customers with their goals, leveraging keen
-                      business sense, adaptability, amiability and a strong
-                      background in visual design. I'm passionate about creative
+                      I've helped start-ups, non-profits, large institutions and
+                      freelance customers reach their goals with my keen eye for
+                      detail, adaptability, amiability, and well honed skills in
+                      web development and design. I'm passionate about creative
                       problem solving and crafting delightful user experiences.
                     </p>
                     <p class="is-size-6 has-text-white">
-                      Are you in need of an accomplished leader, creator,
-                      teacher, lifelong learner, and enthusiastic collaborator?
-                      &nbsp;<a
+                      I'm available for opportunities requiring expertise in
+                      HTML, CSS, JavaScript, React, Node, UX/UI, and Adobe
+                      Creative Suite. &nbsp;<a
                         href="./contact.html"
                         style="color: rgb(88, 160, 255); font-weight:700; text-decoration: none;"
                         >Let’s get in touch!</a
@@ -173,14 +181,45 @@
         <div class="columns">
           <div class="column">
             <article class="box has-background-white">
-              <figure class="center">
-                <a href="https://github.com/UWBC-Final-Project" target="blank"
-                  ><img
-                    src="images/NeighborCorps2.png"
-                    alt=""
-                    class="image img-is-square"
-                /></a>
-              </figure>
+              <div class="media-content center">
+                <div
+                  class="content portfolio-img-width-ref"
+                  style="max-width: 80%; margin:1rem 0 0 0"
+                >
+                  <h1 class="title is-size-4">K2 Sports</h1>
+                  <p class="is-size-6">
+                    Multiple site e-commerce project for global winter sports
+                    brand, where I implemented styles across all product lines.
+                  </p>
+                  <figure class="center">
+                    <a href="https://www.k2sports.com/" target="blank"
+                      ><img
+                        src="./images/k2-sports-logo-400x400.jpg"
+                        alt=""
+                        class="image img-is-square"
+                    /></a>
+                  </figure>
+
+                  <span class="devTool">Vue</span>
+                  <span class="devTool">Node</span>
+                  <span class="devTool">Nuxt.js</span>
+                  <span class="devTool">SASS</span>
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/UWBC-Final-Project"
+                    target="blank"
+                  >
+                    <figcaption class="custom-link" style="text-align: left;">
+                      View on Github
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column">
+            <article class="box has-background-white">
               <div class="media-content center">
                 <div
                   class="content portfolio-img-width-ref"
@@ -192,19 +231,29 @@
                     better stewards by flagging and responding to opportunities
                     for improvement.
                   </p>
+                  <figure class="center">
+                    <a
+                      href="https://github.com/UWBC-Final-Project"
+                      target="blank"
+                      ><img
+                        src="images/NeighborCorps2.png"
+                        alt=""
+                        class="image img-is-square"
+                    /></a>
+                  </figure>
 
-                  <h5>Built using:</h5>
                   <span class="devTool">React Native</span>
                   <span class="devTool">Node</span>
                   <span class="devTool">Express</span>
                   <span class="devTool">MongoDB</span>
+                  <span class="devTool">AWS</span>
                   <br />
                   <br />
                   <a
                     href="https://github.com/UWBC-Final-Project"
                     target="blank"
                   >
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Github
                     </figcaption>
                   </a>
@@ -215,17 +264,6 @@
 
           <div class="column">
             <article class="box has-background-white">
-              <figure class="center">
-                <a
-                  href="https://shrouded-chamber-75975.herokuapp.com/"
-                  target="blank"
-                >
-                  <img
-                    src="images/tip-calculator.png"
-                    alt=""
-                    class="image img-is-square"
-                /></a>
-              </figure>
               <div class="media-content center">
                 <div
                   class="content portfolio-img-width-ref"
@@ -235,15 +273,27 @@
                     React Tip Calculator
                   </h1>
                   <p class="is-size-6">
-                    A simple, clean and intuitive calculator to help patrons
-                    compute and easily split gratuity without tax included.
+                    A simple, clean and intuitive calculator to help diners
+                    easily compute and split gratuity without tax included.
                     <a
                       href="https://shrouded-chamber-75975.herokuapp.com/"
                       target="blank"
                       >Ideal for mobile devices!</a
                     >
                   </p>
-                  <h5>Built using:</h5>
+
+                  <figure class="center">
+                    <a
+                      href="https://shrouded-chamber-75975.herokuapp.com/"
+                      target="blank"
+                    >
+                      <img
+                        src="images/tip-calculator.png"
+                        alt=""
+                        class="image img-is-square"
+                    /></a>
+                  </figure>
+
                   <span class="devTool">HTML/CSS</span>
                   <span class="devTool">JavaScript</span>
                   <span class="devTool">React</span>
@@ -253,47 +303,7 @@
                     href="https://github.com/futurethang/React-Tip-Calculator"
                     target="blank"
                   >
-                    <figcaption class="custom-link" style="text-align: right;">
-                      View on Github
-                    </figcaption>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="column">
-            <article class="box has-background-white">
-              <figure class="center">
-                <a
-                  href="https://github.com/futurethang/Node_Shopping_Cart"
-                  target="blank"
-                >
-                  <img
-                    src="images/shoppingCart.gif"
-                    alt=""
-                    class="image img-is-square"
-                /></a>
-              </figure>
-              <div class="media-content center">
-                <div
-                  class="content portfolio-img-width-ref"
-                  style="max-width: 80%; margin:1rem 0 0 0"
-                >
-                  <h1 class="title is-size-4">Node Shopping Cart</h1>
-                  <p class="is-size-6">
-                    Command line program for making purchases, updating
-                    inventory numbers, and viewing cost and profit margin info.
-                  </p>
-                  <h5>Built using:</h5>
-                  <span class="devTool">Node</span>
-                  <span class="devTool">MySQL</span>
-                  <br />
-                  <br />
-                  <a
-                    href="https://github.com/futurethang/Node_Shopping_Cart"
-                    target="blank"
-                  >
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Github
                     </figcaption>
                   </a>
@@ -305,17 +315,6 @@
         <div class="columns">
           <div class="column">
             <article class="box has-background-white">
-              <figure class="center">
-                <a
-                  href="https://futurethang.github.io/Jewel_Game/"
-                  target="blank"
-                >
-                  <img
-                    src="images/jewels.png"
-                    alt=""
-                    class="image img-is-square"
-                /></a>
-              </figure>
               <div class="media-content center">
                 <div
                   class="content portfolio-img-width-ref"
@@ -329,7 +328,17 @@
                       Play it here!</a
                     >
                   </p>
-                  <h5>Built using:</h5>
+                  <figure class="center">
+                    <a
+                      href="https://futurethang.github.io/Jewel_Game/"
+                      target="blank"
+                    >
+                      <img
+                        src="images/jewels.png"
+                        alt=""
+                        class="image img-is-square"
+                    /></a>
+                  </figure>
                   <span class="devTool">HTML/CSS</span>
                   <span class="devTool">Animation Libraries</span>
                   <br />
@@ -338,7 +347,7 @@
                     href="https://github.com/futurethang/Jewel_Game"
                     target="blank"
                   >
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Github
                     </figcaption>
                   </a>
@@ -348,43 +357,36 @@
           </div>
           <div class="column">
             <article class="box has-background-white">
-              <figure class="center">
-                <a
-                  href="https://cryptic-bayou-49648.herokuapp.com/"
-                  target="blank"
-                >
-                  <img
-                    src="images/eat-a-burger.png"
-                    alt=""
-                    class="image img-is-square"
-                /></a>
-              </figure>
               <div class="media-content center">
                 <div
                   class="content portfolio-img-width-ref"
                   style="max-width: 80%; margin:1rem 0 0 0"
                 >
-                  <h1 class="title is-size-4">MongoDB Burger Tracker</h1>
+                  <h1 class="title is-size-4">Node Shopping Cart</h1>
                   <p class="is-size-6">
-                    Sure, it's corny. But it demonstrates a deployed full stack
-                    web application with some creative, responsive design.
-                    <a href="https://cryptic-bayou-49648.herokuapp.com/">
-                      Check it out.</a
-                    >
+                    Command line program for making purchases, updating
+                    inventory numbers, and viewing cost and profit margin info.
                   </p>
-                  <h5>Built using:</h5>
-                  <span class="devTool">HTML/CSS</span>
+                  <figure class="center is-marginless">
+                    <a
+                      href="https://github.com/futurethang/Node_Shopping_Cart"
+                      target="blank"
+                    >
+                      <img
+                        src="images/shoppingCart.gif"
+                        alt=""
+                        class="image img-is-square"
+                    /></a>
+                  </figure>
                   <span class="devTool">Node</span>
-                  <span class="devTool">Express</span>
-                  <span class="devTool">Handlebars</span>
                   <span class="devTool">MySQL</span>
                   <br />
                   <br />
                   <a
-                    href="https://github.com/futurethang/Eat-A-Burger"
+                    href="https://github.com/futurethang/Node_Shopping_Cart"
                     target="blank"
                   >
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Github
                     </figcaption>
                   </a>
@@ -394,17 +396,6 @@
           </div>
           <div class="column">
             <article class="box has-background-white">
-              <figure class="center">
-                <a
-                  href="https://futurethang.github.io/Hockey-Clicky/"
-                  target="blank"
-                >
-                  <img
-                    src="images/hockey_clickey.png"
-                    alt=""
-                    class="image img-is-square"
-                /></a>
-              </figure>
               <div class="media-content center">
                 <div
                   class="content portfolio-img-width-ref"
@@ -418,7 +409,17 @@
                       Play it now.</a
                     >
                   </p>
-                  <h5>Built using:</h5>
+                  <figure class="center">
+                    <a
+                      href="https://futurethang.github.io/Hockey-Clicky/"
+                      target="blank"
+                    >
+                      <img
+                        src="images/hockey_clickey.png"
+                        alt=""
+                        class="image img-is-square"
+                    /></a>
+                  </figure>
                   <span class="devTool">HTML/CSS</span>
                   <span class="devTool">React</span>
                   <br />
@@ -427,7 +428,7 @@
                     href="https://github.com/futurethang/Hockey-Clicky"
                     target="blank"
                   >
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Github
                     </figcaption>
                   </a>
@@ -642,7 +643,7 @@
                     visual spaces.
                   </p>
                   <a href="https://www.behance.net/kphyde7c6d" target="blank">
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Behance
                     </figcaption>
                   </a>
@@ -673,7 +674,7 @@
                     join future programming.
                   </p>
                   <a href="https://www.behance.net/kphyde7c6d" target="blank">
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Behance
                     </figcaption>
                   </a>
@@ -704,7 +705,7 @@
                     href="https://www.behance.net/gallery/80907257/Logos?"
                     target="blank"
                   >
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Behance
                     </figcaption>
                   </a>
@@ -739,7 +740,7 @@
                     href="https://www.behance.net/gallery/80906537/Tri-Fold-Brochure?"
                     target="blank"
                   >
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Behance
                     </figcaption>
                   </a>
@@ -768,7 +769,7 @@
                     attendees excited for the event.
                   </p>
                   <a href="https://www.behance.net/kphyde7c6d" target="blank">
-                    <figcaption class="custom-link" style="text-align: right;">
+                    <figcaption class="custom-link" style="text-align: left;">
                       View on Behance
                     </figcaption>
                   </a>
