@@ -100,14 +100,6 @@
       >
         <div class="container">
           <div class="columns">
-            <div class="column is-one-third">
-              <figure class="image center">
-                <img
-                  src="images/kph.jpg"
-                  style="max-width: 80%; border-radius: 50%; border: 2px solid #ccc; box-shadow: 0 2px 3px rgba(0,0,0, 0.1)"
-                />
-              </figure>
-            </div>
             <div class="column is-two-thirds center" id="intro">
               <article
                 class="notification"
@@ -154,6 +146,14 @@
                 </div>
               </article>
             </div>
+            <div class="column is-one-third kph-picture">
+              <figure class="image center">
+                <img
+                  src="images/kph.jpg"
+                  style="max-width: 80%; border-radius: 50%; border: 2px solid #ccc; box-shadow: 0 2px 3px rgba(0,0,0, 0.1)"
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </div>
@@ -180,43 +180,62 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <article class="box has-background-white">
-              <div class="media-content center">
-                <div
-                  class="content portfolio-img-width-ref"
-                  style="max-width: 80%; margin:1rem 0 0 0"
-                >
-                  <h1 class="title is-size-4">K2 Sports</h1>
-                  <p class="is-size-6">
-                    Multiple site e-commerce project for global winter sports
-                    brand, where I implemented styles across all product lines.
-                  </p>
-                  <figure class="center">
-                    <a href="https://www.k2sports.com/" target="blank"
-                      ><img
-                        src="./images/k2-sports-logo-400x400.jpg"
-                        alt=""
-                        class="image img-is-square"
-                    /></a>
-                  </figure>
-
-                  <span class="devTool">Vue</span>
-                  <span class="devTool">Node</span>
-                  <span class="devTool">Nuxt.js</span>
-                  <span class="devTool">SASS</span>
-                  <br />
-                  <br />
-                  <a
-                    href="https://github.com/UWBC-Final-Project"
-                    target="blank"
-                  >
-                    <figcaption class="custom-link" style="text-align: left;">
-                      View on Github
-                    </figcaption>
-                  </a>
-                </div>
-              </div>
+            <article class="box has-background-white" data-modal="k2-modal">
+              <h1 class="title is-size-4">K2 Sports</h1>
+              <span class="devTool">Vue</span>
+              <span class="devTool">Node</span>
+              <span class="devTool">Nuxt.js</span>
+              <span class="devTool">SASS</span>
             </article>
+          </div>
+          <div class="modal" id="k2-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">K2 Sports</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <div class="media-content center">
+                  <div
+                    class="content portfolio-img-width-ref"
+                    style="max-width: 80%; margin:1rem 0 0 0"
+                  >
+                    <h1 class="title is-size-4">K2 Sports</h1>
+                    <p class="is-size-6">
+                      Multiple site e-commerce project for global winter sports
+                      brand, where I implemented styles across all product
+                      lines.
+                    </p>
+                    <figure class="center figure-button">
+                      <!-- <a href="https://www.k2sports.com/" target="blank" -->
+                      <a href="#" target="blank"
+                        ><img
+                          src="./images/k2-sports-logo-400x400.jpg"
+                          alt=""
+                          class="image img-is-square"
+                      /></a>
+                    </figure>
+
+                    <span class="devTool">Vue</span>
+                    <span class="devTool">Node</span>
+                    <span class="devTool">Nuxt.js</span>
+                    <span class="devTool">SASS</span>
+                    <br />
+                    <br />
+                    <a
+                      href="https://github.com/UWBC-Final-Project"
+                      target="blank"
+                    >
+                      <figcaption class="custom-link" style="text-align: left;">
+                        View on Github
+                      </figcaption>
+                    </a>
+                  </div>
+                </div>
+              </section>
+              <footer class="modal-card-foot"></footer>
+            </div>
           </div>
           <div class="column">
             <article class="box has-background-white">
@@ -944,5 +963,66 @@
       </nav>
     </footer>
     <!-- </div> -->
+
+    <script>
+      const buttons = document.querySelectorAll(".figure-button");
+      const samples = document.querySelectorAll("article.box");
+      const closeModal = document.querySelectorAll("button.delete");
+
+      Array.from(closeModal).forEach(d => {
+        d.addEventListener("click", () => {
+          modal = document.querySelector(".modal").closest(".is-active");
+          console.log(modal);
+          modal.classList.toggle("is-active");
+        });
+      });
+
+      Array.from(samples).forEach(m => {
+        m.addEventListener("click", () => {
+          modal = document.getElementById(m.dataset.modal);
+          console.log(modal);
+          modal.classList.toggle("is-active");
+        });
+      });
+
+      // function getSiblings(el, filter) {
+      //   var siblings = [];
+      //   el = el.parentNode.firstChild;
+      //   do {
+      //     if (!filter || filter(el)) siblings.push(el);
+      //   } while ((el = el.nextSibling));
+      //   return siblings;
+      // }
+
+      // example filter function
+      // function exampleFilter(el) {
+      //     return elem.nodeName.toLowerCase() == 'a';
+      // }
+
+      // usage
+      // el = document.querySelector("div");
+      // get all siblings of el
+      // var sibs = getSiblings(el);
+      // get only anchor element siblings of el
+      // var sibs_a = getSiblings(el, exampleFilter);
+
+      // const noShow = "display: none; border: 1px dashed blue;";
+
+      // Array.from(buttons).forEach(button => {
+      //   button.addEventListener("mouseover", function(e) {
+      //     e.preventDefault();
+      //     let sibs = getSiblings(button);
+
+      //     console.log(sibs);
+
+      //     sibs.forEach(el => {
+      //       console.log(el);
+      //       if (el.nodeName !== "#text" && el.nodeName !== "FIGURE") {
+      //         el.style = noShow;
+      //       }
+      //     });
+      //   });
+      // });
+    </script>
   </body>
 </html>
